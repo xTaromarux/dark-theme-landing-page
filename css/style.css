@@ -1,0 +1,589 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: hsl(218, 28%, 13%);
+    color: hsl(0, 0%, 100%);
+}
+
+/* Wave at the top of the page */
+.up-wave-bg-desktop{
+    position: absolute;
+    background-color: hsl(219, 30%, 18%);
+    width: 100%;
+    height: 750px;
+    z-index: -100;
+}
+.wave-bg-desktop{
+    position: absolute;
+    top:750px;
+    background-color: hsl(219, 30%, 18%);
+    width: 100%;
+    z-index: -100;
+}
+
+/* Header of the page */
+.header{
+    display: grid;
+    grid-template-columns: 75% 7% 7% 7% 4%;
+    width: auto;
+    height: 130px;
+    font-family: 'Raleway', sans-serif;
+}
+.item-header{
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    align-self: center;
+    justify-self: center;
+    font-size: 18px;
+}
+.item-header:hover{
+    font-weight: 700;
+    text-decoration: underline;
+}
+.header img{
+    justify-self: start;
+    margin-left: 50px;
+}
+/* Getting started section */
+.get-started{
+    width: auto;
+    height: 940px;
+    display: flex;
+    margin-bottom: 200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+}
+.item-get-started{
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.item-get-started h1 {
+    font-size: 290%;
+}
+.item-get-started p{
+    width: 90%;
+    font-size: 150%;
+}
+.item-get-started .item-button{
+    cursor: pointer;
+    border:none;
+    width: 40%;
+    height: 60px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    background: linear-gradient(90deg, hsl(176, 68%, 64%) , hsl(198, 60%, 50%) 100%);
+    color: white;
+    border-radius: 50px;
+}
+.item-get-started .item-button:hover{
+    background: linear-gradient(90deg, hsl(176, 68%, 64%) 100%, hsl(198, 60%, 50%) 100%);
+}
+
+/* Company information section*/
+.about-information{
+    width: auto;
+    height: 650px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+.item-about{
+    width: 42%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+.item-about p, .item-about h2{
+    margin: 5px;
+}
+.item-about h2{
+    font-family: 'Raleway', sans-serif;
+    margin-top: 25px;
+}
+.about-information .item-1{
+    margin-right: 10%;
+    grid-area: 1/  1 / 1 / 1;
+    justify-self: end;
+}
+.about-information .item-2{
+    width: 47%;
+    margin-left: 10%;
+    grid-area: 1/  2 / 1 / 2;
+}
+.about-information .item-3{
+    width: 47%;
+    margin-right: 8%;
+    grid-area: 2/  1 / 2 / 1;
+    justify-self: end;
+}
+.about-information .item-4{
+    margin-left: 12%;
+    grid-area: 2/  2 / 2 / 2;
+}
+
+/* Section with information how this page works */
+.how-it-works{
+    width: auto;
+    height: 750px;
+    display: grid;
+    grid-template-columns: 48% 7% 45%;
+    font-family: 'Raleway', sans-serif;
+}
+.item-how-it-works{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.how-it-works .item-1{
+    justify-self: end;
+    grid-column: 1 / 1;
+}
+.how-it-works .item-2{
+    grid-column: 3 / 3;
+    width: 62%;
+}
+.how-it-works .item-2 p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 20px;
+}
+.how-it-works .item-2 h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 300%;
+}
+.how-it-works .item-2 a{
+    margin-top: 10px;
+    width: 152px;
+    border-bottom: 1px solid hsl(176, 68%, 64%);
+    color: hsl(176, 68%, 64%);
+    text-decoration: none;
+    display: flex;
+}
+.icon-arrow{
+    margin-left: 7px;
+}
+.icon-arrow g{
+    fill: #62E0D9;
+}
+.how-it-works .item-2 a:hover > .icon-arrow g{
+    fill: #ffffff;
+}
+.how-it-works .item-2 a:hover{
+    width: 152px;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+/* Section with comments */
+.comments{
+    width: auto;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 10% 27% 27% 27% 10%;
+    grid-template-rows: 100%;
+}
+.item-comments {
+    width: 75%;
+    height: auto;
+    align-self: start;
+    justify-self: start;
+    background-color: hsl(219, 30%, 18%);
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+    padding: 37px 25px 15px 32px;
+    margin-left: 10px;
+    line-height: 20px;
+}
+.item-comments div{
+    display: grid;
+    grid-template-columns: 12% 88%;
+    grid-template-rows: 100%;
+    width: auto;
+    margin-top: 20px;
+    height: 70px;
+}
+.item-comments div img{
+    grid-column: 1 / 1;
+    margin-top: 3px;
+}
+.item-comments div h5, .item-comments div p{
+    padding-left: 10px;
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+    letter-spacing: 2px;
+    align-items: center;
+}
+.item-comments div p{
+    line-height: 40px;
+    font-size: 8px;
+}
+.quotes{
+    grid-area: 1 / 1 / 1 / 1;
+    align-self: start;
+    justify-self: end;
+    position: relative;
+    left: 55px;
+    bottom: 35px;
+    z-index: -100;
+}
+.comments .item-1{
+    grid-column: 2 / 2;
+}
+.comments .item-2{
+    grid-column: 3 / 3;
+}
+.comments .item-3{
+    grid-column: 4 / 4;
+}
+.comments h5{
+    padding: 0;
+    margin: 0;
+}
+.comments p:first-child{
+    padding: 0;
+    margin: 0 50px 0 0;
+}
+.comments img:not(img:nth-child(4)){
+    width: 30px;
+    border-radius: 50%;
+}
+
+/* Section with information about early access */
+.early-access{
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 65%;
+    height: 300px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    background-color:hsl(217, 28%, 15%);
+    border-radius: 10px;
+    padding-top: 20px;
+}
+.early-access h1{
+    font-size: 300%;
+    margin: 30px 0 30px 0;
+}
+.early-access p{
+    width: 75%;
+    font-size: 120%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.early-access form{
+    margin-top: 50px;
+}
+.early-access form input:first-child{
+    padding-left: 40px;
+    width: 60%;
+    outline: none;
+    height: 50px;
+    border-radius: 50px;
+}
+.early-access form input:last-child{
+    width: 20%;
+    height: 55px;
+    margin-left: 20px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    background: linear-gradient(90deg, hsl(176, 68%, 64%) , hsl(198, 60%, 50%) 100%);
+}
+.early-access form input:last-child:hover{
+    background: linear-gradient(90deg, hsl(176, 68%, 64%) 100%, hsl(198, 60%, 50%) 100%);
+}
+
+/* Footer of the page */
+.footer{
+    width: auto;
+    height: 650px;
+    background-color: hsl(216, 53%, 9%);
+    font-family: 'Open Sans', sans-serif;
+    display: grid;
+    font-size: 18px;
+    grid-template-rows: 65% 35%;
+    grid-template-columns: 10% 25% 25% 25% 15%;
+}
+.footer-logo{
+    grid-area: 1 / 2 / 1 / 2;
+    align-self: end;
+    margin-bottom: 100px;
+}
+.footer .item-1{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 10% 90%;
+    grid-area: 2 / 2 / 2 / 2;
+}
+.footer .item-1 p,
+.footer .item-2 p{
+    margin: 0;
+}
+.footer .item-1 img{
+    margin-top: 5px;
+}
+.footer .item-2{
+    display: grid;
+    grid-template-rows: 25% 75%;
+    grid-template-columns: 30% 70%;
+    grid-area: 2 / 3 / 2 / 3;
+}
+.footer .item-2 img{
+    justify-self: end;
+    margin: 5px 20px 0 0;
+}
+.footer .item-3{
+    grid-area: 2 / 4 / 2 / 4;
+}
+.footer .item-3 ul{
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0;
+    list-style: none;
+    line-height: 45px;
+}
+.footer .item-3 li{
+    width: 50%;
+    position: relative;
+    bottom: 10px;
+}
+.footer .item-3 a:hover{
+    font-weight: 700;
+}
+.footer .item-4{
+    grid-area: 2 / 5 / 2 / 5;
+    display: flex;
+}
+.icon {
+    width: 2em;
+    height: 2em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+.icon-instagram{
+    width: 0.9em;
+    height: 0.9em;
+    padding:9px 0 0 9px;
+    stroke: currentColor;
+    fill: currentColor;
+}
+.icon-instagram-div{
+    width: 1.9em;
+    height: 1.9em;
+    border:1.9px solid white;
+    border-radius: 50%;
+}
+.icon-twitter{
+    margin:0 20px 0 20px;
+}
+.icon-instagram-div:hover{
+    border-color: hsl(176, 68%, 64%);
+}
+.icon:hover, .icon-instagram-div:hover .icon-instagram{
+    stroke: hsl(176, 68%, 64%);
+    fill: hsl(176, 68%, 64%);
+}
+
+/* Bottom lettering of the page */
+footer{
+    background-color: hsl(216, 53%, 9%);
+    padding-bottom: 20px;
+}
+footer p {
+    margin: 0;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media screen and (max-width: 900px) {
+    .header{
+        grid-template-columns: 50% 15% 15% 15% 5%;
+    }
+    .header img{
+        width: 50%;
+    }
+    .get-started{
+        margin-bottom: 0;
+    }
+    .get-started img{
+        width: 80%;
+    }
+    .item-get-started{
+        width: 80%;
+    }
+    .item-get-started h1 {
+        font-size: 250%;
+    }
+    .item-get-started p{
+        width: 97%;
+    }
+    .item-get-started .item-button{
+        width: 75%;
+    }
+
+    .about-information{
+        height: 1200px;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 25% 25% 25%;
+    }
+    .about-information .item-1{
+        width: 60%;
+        margin-right: 0%;
+        grid-area: 1 /  1 / 1 / 1;
+        justify-self: center;
+    }
+    .about-information .item-2{
+        width: 60%;
+        justify-self: center;
+        margin-left: 0;
+        grid-area: 2 /  1 / 2 / 1;
+    }
+    .about-information .item-3{
+        width: 60%;
+        justify-self: center;
+        margin-right: 0%;
+        grid-area: 3 /  1 / 3 / 1;
+    }
+    .about-information .item-4{
+        width: 70%;
+        margin-left: 0%;
+        grid-area: 4 /  1 / 4 / 1;
+        justify-self: center;
+    }
+
+    .how-it-works{
+        height: 600px;
+        grid-template-columns: 100%;
+        grid-template-rows: 55% 45%;
+    }
+    .how-it-works .item-1 img{
+        width: 90%;
+        justify-self: center;
+        align-self: center;
+    }
+    .how-it-works .item-2{
+        margin: 40px;
+        align-self: start;
+        grid-column: 1 / 1;
+        grid-row: 2 / 2;
+        width: 90%;
+    }
+
+    .how-it-works .item-2 h1{
+        font-size: 180%;
+    }
+
+    .quotes{
+        grid-area: 1 / 1 / 1 / 1;
+        align-self: end;
+        justify-self: start;
+        width: 8%;
+        position: relative;
+        left: 50px;
+        top: 5px;
+    }
+    .comments{
+        height: 1200px;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 20% 20% 50%;
+    }
+    .item-comments {
+        align-self: start;
+        justify-self: center;
+        margin-left: 10px;
+    }
+    .comments .item-1{
+        grid-area: 2 / 1 / 2 / 1;
+    }
+    .comments .item-2{
+        grid-area: 3 / 1 / 3 / 1;
+    }
+    .comments .item-3{
+        grid-area: 4 / 1 / 4 / 1;
+    }
+
+    .early-access{
+        width: 90%;
+        height: 400px;
+    }
+    .early-access h1{
+        font-size: 200%;
+    }
+    .early-access p{
+        width: 85%;
+    }
+    .early-access form input:first-child{
+        width: 75%;
+        margin-bottom: 30px;
+    }
+    .early-access form input:last-child{
+        width: 86%;
+        margin-left: 0;
+    }
+
+    .footer{
+        height: 1100px;
+        grid-template-columns: 100%;
+        grid-template-rows: 35% 10% 15% 30% 10%;
+    }
+    .footer-logo{
+        grid-area: 1 / 1 / 1 / 1;
+        padding: 40px;
+        margin-bottom: 0;
+    }
+    .footer .item-1{
+        padding: 40px 40px 20px 40px;
+        grid-area: 2 / 1 / 2 / 1;
+    }
+    .footer .item-2{
+        margin-top: 20px;
+        grid-area: 3 / 1 / 3 / 1;
+        grid-template-rows: 30% 50%;
+        grid-template-columns: 20% 70%;
+    }
+    .footer .item-2 img{
+        justify-self: center;
+        margin: 0;
+    }
+    .footer .item-3{
+        padding: 0 40px 40px 40px;
+        grid-area: 4 / 1 / 4 / 1;
+    }
+    .footer .item-3 ul{
+        height: 350px;
+        padding: 0;
+    }
+    .footer .item-3 ul li:nth-child(4){
+        margin-bottom: 30px;
+    }
+    .footer .item-4{
+        justify-self: center;
+        padding: 40px;
+        grid-area: 5 / 1 / 5 / 1;
+    }
+}

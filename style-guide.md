@@ -50,9 +50,3 @@ For the social icons, you can use a font icon library. Some suggestions can be f
 - [IcoMoon](https://icomoon.io/)
 - [Ionicons](https://ionicons.com/)
 
-Proszę o fetback odnośnie
-- pozycjonowania, czy jest to w jakimś stopniu poprawne
-- jak inaczej można pozycjonować wave
-- czy css nie jest za długi czy jest coś co można skrócić
-
-@media screen and (min-width: 900px) {
